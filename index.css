@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+}
+i,svg{
+    pointer-events: none;
+}
+.kick-pad,
+.snare-pad,
+.hihat-pad{
+    width:5rem;
+    height:5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+}
+.kick-pad{
+    background: rgb(156, 191, 247);
+}
+.snare-pad{
+    background: rgb(226, 255, 183);
+}
+.hihat-pad{
+    background:rgb(253, 191, 124);
+}
+.kick-pad.active{
+    background:rgb(16, 107, 255);
+}
+.snare-pad.active{
+    background:rgb(153, 255, 0);
+}
+.hihat-pad.active{
+    background:rgb(233, 120, 0);
+}
+.hihat-track,
+.snare-track,
+.kick-track{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:70%;
+    margin-top: 5rem;
+}
+.kick,.snare,.hihat{
+    display: flex;
+}
+.sequencer{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+    margin: 0rem 2rem;
+}
+.control button{
+    padding:1rem;
+    border:none;
+    background:#929292;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.pad{
+    transition:all 0.5s ease;
+}
+.play{
+    padding:1rem 2rem;
+    font-size: 1.5rem;
+    background:#929292;
+    color:white;
+    border:none;
+    cursor: pointer;
+    margin-top:3rem;
+}
+select{
+    padding:1rem;
+    font-size:1rem;
+    margin:1rem;
+}
+.mute.active{
+    background:#cbcbcb;
+}
+
+.tempo{
+    margin: 3rem;
+    width:30%;
+}
+.tempo-slider{
+    padding:0.2rem;
+    -webkit-appearance: none;
+    margin:1rem 0rem;
+    width:100%;
+    position: relative;
+    background:#929292;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.tempo-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+  appearance: none;
+    background:black;
+    width: 20px;
+  height: 20px;
+    border-radius: 100%;
+  cursor: pointer;
+}
+.tempo p{
+    font-size: 1.5rem;
+    margin:2rem;
+    text-align: center;
+}
+
+@keyframes playTrack{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform:scale(1.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
